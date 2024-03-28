@@ -15,10 +15,14 @@ header {
 
 main {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  height: 50vh;
+  width: 300px;
 }
 
 img:nth-of-type(even) {
