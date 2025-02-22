@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Interactive Color Reveal</title>
+</head>
+<body>
+  <div class="image-container">
+    <img class="b-w-image" src="https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_960_720.jpg">
+    <img class="colorful-image" src="https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_960_720.jpg">
+  </div>
+
+  <svg>
+    <mask id="mask">
+      <circle class="mask-circle" r="0" fill="white" filter="url(#blur-effect)" />
+    </mask>
+
+    <filter id="blur-effect">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+  </svg>
+
+  <script src="./index.js"></script>
+</body>
+</html>
